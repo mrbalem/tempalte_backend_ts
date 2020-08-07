@@ -4,7 +4,7 @@
 
 1. Go to project folder
 
-> cd nevado_back_new
+> cd tempalte_backend_ts
 
 2. Install Dependencies
 
@@ -12,12 +12,23 @@
 
 3. Create .env with following content
 
-````
-DB_URL=
-
+```
 PORT=3000
 SECRET=AAA
-````
+
+// firebase config proyect
+
+TYPE=
+PROJECT_ID=
+PRIVATE_KEY_ID=
+PRIVATE_KEY=
+CLIENT_EMAIL=
+CLIENT_ID=
+AUTH_URI=
+TOKEN_URI=
+AUTH_PROVIDER=
+CLIENT_CERT=
+```
 
 ## Run
 
@@ -28,3 +39,5 @@ SECRET=AAA
 2. Open in url or using an Endpoint tester (postman)
 
 > http://127.0.0.1:3000/
+
+> http://localhost:3000/
