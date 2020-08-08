@@ -1,13 +1,26 @@
-/** @format */
+import express from "express";
 
-import express from 'express';
+//[*] import routes
+import userRouter from "./userRoutes";
 
-const router = express.Router();
+/**
+ * @author DigitalNew
+ * @see https://digitalnew.solutions/
+ * @process 1
+ * @version 1.0
+ */
 
-// Users routes
-
-import user from '@routes/userRoutes';
-
-router.use(user);
-
-export default router;
+export default class Routes {
+  public pathname: string = "/api/v1/rest";
+  /**
+   * @function routes
+   * @generator router for this proyect api rest
+   * @param app aplication use for express route
+   * @description continene todas las rutas establecidas para el proyecto
+   */
+  public routes(app: express.Application): void {
+    // [*] lista de rutas del proyecto
+    new userRouter(app).Endpoint(this.pathname);
+    // [+] instanciar las rutas necesarias para el proyecto
+  }
+}
