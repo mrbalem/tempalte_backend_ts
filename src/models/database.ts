@@ -1,6 +1,11 @@
 /** @format */
 import admin from "firebase-admin";
 
+import * as dotenv from "dotenv";
+
+//[*] load port from env
+dotenv.config();
+
 const {
   TYPE,
   PROJECT_ID,
